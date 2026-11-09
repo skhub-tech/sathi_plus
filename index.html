@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sathi Plus — Desktop AI, PDF & Media Productivity Studio for macOS & Windows</title>
+  <meta name="description" content="Download Sathi Plus: The all-in-one desktop AI companion for macOS and Windows. Features AI Music & Image Generation, 12-in-1 PDF Suite, Document Reader, Audio Transcription, and Screen Recording.">
+  <meta name="keywords" content="Sathi Plus, Desktop AI, PDF Tools, AI Music Generator, AI Image Generator, Document Reader, Audio Transcription, macOS, Windows app, download">
+  
+  <!-- Favicon & Social Meta -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%238b5cf6%22/><path d=%22M30 50h40M50 30v40%22 stroke=%22white%22 stroke-width=%2212%22 stroke-linecap=%22round%22/></svg>">
+  
+  <!-- Typography (Inter & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons (Local + CDN fallback) -->
+  <script src="assets/js/lucide.min.js"></script>
+  <script>if (!window.lucide) document.write('<script src="https://unpkg.com/lucide@latest"><\/script>');</script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="nav-brand">
+        <div class="brand-icon">
+          <i data-lucide="sparkles"></i>
+        </div>
+        <div class="brand-name">
+          <span>Sathi</span>
+          <span class="plus-tag">Plus</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#mockup-section" class="nav-link">Showcase</a></li>
+          <li><a href="#features-pillars" class="nav-link">Core Features</a></li>
+          <li><a href="#tools-suite" class="nav-link">18+ Tools</a></li>
+          <li><a href="#pdf-tools" class="nav-link">PDF Suite</a></li>
+          <li><a href="#download-section" class="nav-link">Download</a></li>
+          <li><a href="#specs-section" class="nav-link">System Specs</a></li>
+          <li><a href="#faq-section" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#download-section" class="btn btn-primary btn-sm">
+          <i data-lucide="download"></i>
+          <span>Get Sathi Plus</span>
+        </a>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <a href="#mockup-section" class="mobile-nav-link"><span>Showcase</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#features-pillars" class="mobile-nav-link"><span>Core Features</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#tools-suite" class="mobile-nav-link"><span>18+ Native Tools</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#pdf-tools" class="mobile-nav-link"><span>12-in-1 PDF Suite</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#download-section" class="mobile-nav-link"><span>Download Hub</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#specs-section" class="mobile-nav-link"><span>System Specs</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+    <a href="#faq-section" class="mobile-nav-link"><span>FAQ</span> <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge-wrap">
+        <span class="hero-badge-dot"></span>
+        <span class="hero-badge-text">v2.4 Desktop Release • macOS & Windows</span>
+      </div>
+
+      <h1 class="hero-title">
+        The Ultimate Desktop AI & <br>
+        <span class="gradient-text">Media Productivity Companion</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Compose original music, generate stunning images, manage PDFs with a 12-in-1 offline suite, read documents in focused bliss, and transcribe audio — all in one native desktop app.
+      </p>
+
+      <!-- Smart OS Detection CTA -->
+      <div class="hero-cta-container" id="hero-cta-container">
+        <div class="hero-download-buttons">
+          <a href="#download-section" class="download-btn-highlight" id="hero-primary-download-btn">
+            <div class="download-btn-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-label="Apple logo">
+                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+              </svg>
+            </div>
+            <div class="download-btn-text">
+              <span class="download-btn-action">Download for macOS</span>
+              <span class="download-btn-sub">Universal for Apple Silicon & Intel • Free v2.4</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="hero-meta-badges">
+        <div class="hero-meta-item">
+          <i data-lucide="check-circle-2"></i>
+          <span>Offline First & Private</span>
+        </div>
+        <div class="hero-meta-item">
+          <i data-lucide="check-circle-2"></i>
+          <span>Apple Silicon (M1-M4) & Intel</span>
+        </div>
+        <div class="hero-meta-item">
+          <i data-lucide="check-circle-2"></i>
+          <span>Windows 10 / 11 64-bit</span>
+        </div>
+        <div class="hero-meta-item">
+          <i data-lucide="check-circle-2"></i>
+          <span>No Ads • No Subscription</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive App Mockup Showcase -->
+  <section class="mockup-section" id="mockup-section">
+    <div class="container">
+      <div class="mockup-wrapper">
+        <!-- Titlebar -->
+        <div class="mockup-titlebar">
+          <div class="mockup-controls">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="mockup-title">
+            <i data-lucide="laptop" style="width: 15px; height: 15px;"></i>
+            <span>Sathi Plus — Desktop Studio</span>
+          </div>
+          <div class="mockup-actions">
+            <button class="mockup-action-btn" title="Full Screen View" id="mockup-zoom-btn">
+              <i data-lucide="maximize-2" style="width: 15px; height: 15px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Tabs for Live Screenshots -->
+        <div class="mockup-nav-tabs">
+          <button class="tab-btn active" data-tab="music">
+            <i data-lucide="music"></i>
+            <span>Music Generator</span>
+          </button>
+          <button class="tab-btn" data-tab="document">
+            <i data-lucide="book-open"></i>
+            <span>Document Reader</span>
+          </button>
+          <button class="tab-btn" data-tab="image">
+            <i data-lucide="image"></i>
+            <span>Image Generator</span>
+          </button>
+          <button class="tab-btn" data-tab="pdf">
+            <i data-lucide="file-text"></i>
+            <span>12-in-1 PDF Suite</span>
+          </button>
+        </div>
+
+        <!-- Screen Preview -->
+        <div class="mockup-content">
+          <div class="mockup-screen-container" id="mockup-screen-container" title="Click to inspect full resolution screenshot">
+            <img 
+              id="mockup-img" 
+              src="assets/screenshots/music-generator.png" 
+              alt="Sathi Plus - AI Music Generator Interface" 
+              class="mockup-img"
+            >
+            <div class="mockup-overlay-hint">
+              <i data-lucide="zoom-in" style="width: 14px; height: 14px;"></i>
+              <span>Click to view full screenshot</span>
+            </div>
+          </div>
+
+          <!-- Feature Description Strip below Mockup -->
+          <div class="mockup-info-strip">
+            <div class="mockup-feature-desc">
+              <span class="mockup-feature-badge" id="mockup-feature-badge">Creative AI</span>
+              <div>
+                <div class="mockup-feature-title" id="mockup-feature-title">Music Generator</div>
+                <div class="mockup-feature-sub" id="mockup-feature-desc">
+                  Describe a melody or song theme, choose duration (up to multi-minute), toggle vocals on/off, and generate or regenerate high-fidelity audio.
+                </div>
+              </div>
+            </div>
+            <div class="mockup-shortcuts-pill">
+              <i data-lucide="keyboard" style="width: 14px; height: 14px;"></i>
+              <span id="mockup-shortcuts-text">Send: Ctrl+Enter • Toggle Vocals: Alt+Shift+D</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Pillars (Bento Grid) -->
+  <section class="section" id="features-pillars">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Engineered for Creators & Power Users</span>
+        <h2 class="section-title">Everything You Need In One Cohesive Workspace</h2>
+        <p class="section-subtitle">
+          Say goodbye to juggling twenty disconnected web apps. Sathi Plus brings together generative artificial intelligence, document mastery, and multimedia utilities directly onto your machine.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Generative AI Creative Suite -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="wand-2"></i>
+          </div>
+          <h3 class="pillar-title">Generative AI Studio</h3>
+          <p class="pillar-desc">
+            Create media on demand without complex cloud configurations. Transform simple text prompts into production-grade assets.
+          </p>
+          <ul class="pillar-list">
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>AI Music Generator:</strong> Length control, vocals toggle, and prompt refinement.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>AI Image Generator:</strong> Photorealistic & stylized visuals with conversational iteration.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Computer Vision & Analyzer:</strong> Instant scene parsing and image understanding.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>TF AI Assistant:</strong> Contextual intelligence and deep knowledge synthesis.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 2: Document & PDF Mastery -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="file-check"></i>
+          </div>
+          <h3 class="pillar-title">Document & PDF Suite</h3>
+          <p class="pillar-desc">
+            A complete 12-tool Swiss Army Knife for PDFs, paired with a library manager for distraction-free reading and research.
+          </p>
+          <ul class="pillar-list">
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>12-in-1 Offline PDF Toolkit:</strong> Merge, split, encrypt, redact, crop, and convert without uploading data.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Focused Document Reader:</strong> Folders, library search, and custom reading workspaces.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Ebooks & Library Hub:</strong> Keep your digital library indexed and easily searchable.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Structured JSON & OCR:</strong> Extract machine-readable structured data from documents.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Pillar 3: Audio, Screen & Utilities -->
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <i data-lucide="disc-3"></i>
+          </div>
+          <h3 class="pillar-title">Audio & Media Utilities</h3>
+          <p class="pillar-desc">
+            Built-in recording, transcription, and translation workflows that keep your content pipelines smooth and private.
+          </p>
+          <ul class="pillar-list">
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Speech-to-Text Transcription:</strong> Convert meetings, lectures, and voice memos to text.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Screen & Audio Recorder:</strong> Capture tutorials, meetings, and desktop feeds in high definition.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Radio & Podcast Hub:</strong> Live audio streams, podcast management, and media player.</span>
+            </li>
+            <li class="pillar-list-item">
+              <i data-lucide="check"></i>
+              <span><strong>Text to Audio & Translation:</strong> Natural TTS voiceovers and multilingual translation.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete 18+ Tools Matrix -->
+  <section class="section" id="tools-suite">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">All Built-In Modules</span>
+        <h2 class="section-title">18+ Native Tools. Zero Add-On Fees.</h2>
+        <p class="section-subtitle">
+          Everything you saw in the sidebar is included out of the box. No subscription lock-in, no hidden micropayments.
+        </p>
+      </div>
+
+      <!-- Interactive Feature Finder / Filter Bar -->
+      <div class="tools-search-wrapper">
+        <div style="position: relative;">
+          <i data-lucide="search" class="tools-search-icon" style="width: 18px; height: 18px;"></i>
+          <input 
+            type="text" 
+            id="tools-search-input" 
+            class="tools-search-input" 
+            placeholder="Search features (e.g. pdf, audio, music, screen, reader)..."
+            autocomplete="off"
+          >
+          <span class="tools-search-count" id="tools-search-count">18 tools</span>
+        </div>
+      </div>
+
+      <div class="tools-grid" id="tools-grid">
+        <!-- 1 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="mic"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Audio Transcription</span>
+            <span class="tool-desc">Turn spoken audio into accurate, searchable text with timestamps.</span>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="book-open"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Document Reader</span>
+            <span class="tool-desc">Folder-based library, clean reading layout, and fast file switching.</span>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="library"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Ebooks Hub</span>
+            <span class="tool-desc">Read and manage your personal EPUB and digital book collection.</span>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="scan"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Image Analyzer</span>
+            <span class="tool-desc">Visual intelligence for object detection, scene parsing, and OCR.</span>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="image"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Image Generator</span>
+            <span class="tool-desc">Prompt-to-image synthesis with conversational iterative tweaks.</span>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="graduation-cap"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Knowledge Hub</span>
+            <span class="tool-desc">Centralized knowledge store for notes, research, and quick retrieval.</span>
+          </div>
+        </div>
+        <!-- 7 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="music"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Music Generator</span>
+            <span class="tool-desc">Generate custom instrumental or vocal songs from text descriptions.</span>
+          </div>
+        </div>
+        <!-- 8 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="play-circle"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">My Player</span>
+            <span class="tool-desc">Smooth hardware-accelerated playback for local audio and video files.</span>
+          </div>
+        </div>
+        <!-- 9 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="newspaper"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">News Hub</span>
+            <span class="tool-desc">Curated headlines and topical news feeds without algorithmic clutter.</span>
+          </div>
+        </div>
+        <!-- 10 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="edit-3"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Notepad</span>
+            <span class="tool-desc">Instant lightweight scratchpad for markdown, code snippets, and ideas.</span>
+          </div>
+        </div>
+        <!-- 11 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="file-text"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">PDF Tools (12-in-1)</span>
+            <span class="tool-desc">Complete PDF manipulation: merge, split, redact, edit, protect, and JSON.</span>
+          </div>
+        </div>
+        <!-- 12 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="radio"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Radio Hub</span>
+            <span class="tool-desc">Tune into global digital radio stations and live broadcasts anytime.</span>
+          </div>
+        </div>
+        <!-- 13 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="video"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Screen Recorder</span>
+            <span class="tool-desc">Lossless desktop video capture with system and microphone audio inputs.</span>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="volume-2"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Text to Audio</span>
+            <span class="tool-desc">Natural sounding text-to-speech engine for audiobooks and voiceovers.</span>
+          </div>
+        </div>
+        <!-- 15 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="languages"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Text Translator</span>
+            <span class="tool-desc">Instant multilingual translation preserving formatting and context.</span>
+          </div>
+        </div>
+        <!-- 16 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="bot"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">TF AI Model</span>
+            <span class="tool-desc">Integrated deep AI engine for conversation, analysis, and generation.</span>
+          </div>
+        </div>
+        <!-- 17 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="film"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Video Description</span>
+            <span class="tool-desc">Automatic AI scene breakdown and summary generation for video files.</span>
+          </div>
+        </div>
+        <!-- 18 -->
+        <div class="tool-card">
+          <div class="tool-icon"><i data-lucide="mic-2"></i></div>
+          <div class="tool-info">
+            <span class="tool-name">Voice Recorder</span>
+            <span class="tool-desc">Studio audio capture with automatic noise reduction and quick save.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PDF Tools Spotlight -->
+  <section class="section" id="pdf-tools" style="padding-top: 20px;">
+    <div class="container">
+      <div class="pdf-spotlight">
+        <div class="pdf-spotlight-text">
+          <span class="section-tag">Privacy-First Document Suite</span>
+          <h3>Never Upload Sensitive PDFs to Random Websites Again</h3>
+          <p>
+            Most free online PDF utilities upload your private contracts, financial sheets, and legal documents to third-party servers. Sathi Plus executes every single operation 100% locally on your CPU/GPU.
+          </p>
+          <div class="hero-meta-item" style="color: var(--accent-purple-light); font-weight: 600;">
+            <i data-lucide="shield-check" style="color: var(--accent-purple-light);"></i>
+            <span>Zero server uploads • Offline security • Unlimited file size</span>
+          </div>
+        </div>
+
+        <div class="pdf-badges-grid">
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Images to PDF</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Merge Multiple PDFs</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Split PDF by Range</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Organize & Reorder Pages</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Crop Pages Accurately</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Edit PDF Text Directly</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Protect with Password</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Remove Password / Unlock</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Redact Sensitive Info</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Compress & Optimize Size</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Export PDF to Images</span></div>
+          <div class="pdf-badge"><i data-lucide="check"></i><span>Structured JSON Output</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section / Release Matrix -->
+  <section class="downloads-section" id="download-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct Downloads</span>
+        <h2 class="section-title">Download Sathi Plus for Your Operating System</h2>
+        <p class="section-subtitle">
+          Clean installers with verified signatures. Choose your platform below to get started in seconds.
+        </p>
+      </div>
+
+      <div class="os-cards-grid">
+        <!-- macOS Card -->
+        <div class="os-card" id="card-macos">
+          <span class="os-card-badge">Universal Build</span>
+          
+          <div class="os-header">
+            <div class="os-icon-box">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-label="Apple logo">
+                <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+              </svg>
+            </div>
+            <div class="os-info">
+              <h3>macOS</h3>
+              <p>macOS 11.0 Big Sur or later (Sequoia ready)</p>
+            </div>
+          </div>
+
+          <div class="os-download-group">
+            <a href="#download-mac-arm" class="os-download-btn primary-option" id="download-mac">
+              <div class="os-dl-left">
+                <span class="os-dl-title">Apple Silicon (M1 / M2 / M3 / M4)</span>
+                <span class="os-dl-meta">Sathi-Plus-2.4.0-arm64.dmg • ~148 MB</span>
+              </div>
+              <i data-lucide="arrow-down-to-line"></i>
+            </a>
+
+            <a href="#download-mac-intel" class="os-download-btn">
+              <div class="os-dl-left">
+                <span class="os-dl-title">Intel Core Processor (x64)</span>
+                <span class="os-dl-meta">Sathi-Plus-2.4.0-x64.dmg • ~152 MB</span>
+              </div>
+              <i data-lucide="arrow-down-to-line"></i>
+            </a>
+          </div>
+
+          <div class="os-cli-box">
+            <code>brew install --cask sathi-plus</code>
+            <button class="copy-btn" data-copy="brew install --cask sathi-plus" title="Copy to clipboard">
+              <i data-lucide="copy" style="width: 15px; height: 15px;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Windows Card -->
+        <div class="os-card" id="card-windows">
+          <span class="os-card-badge">64-bit Edition</span>
+
+          <div class="os-header">
+            <div class="os-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-label="Windows logo">
+                <path d="M0 3.449L9.75 2.1v9.451H0V3.449zm0 17.102l9.75 1.349V12.45H0v8.101zm11.25 1.558L24 24V12.45H11.25v9.659zm0-19.768v9.208H24V0l-12.75 2.341z"/>
+              </svg>
+            </div>
+            <div class="os-info">
+              <h3>Windows</h3>
+              <p>Windows 10 / Windows 11 (64-bit systems)</p>
+            </div>
+          </div>
+
+          <div class="os-download-group">
+            <a href="#download-win-setup" class="os-download-btn primary-option" id="download-windows">
+              <div class="os-dl-left">
+                <span class="os-dl-title">Windows Installer (.exe)</span>
+                <span class="os-dl-meta">Sathi-Plus-Setup-2.4.0.exe • ~142 MB</span>
+              </div>
+              <i data-lucide="arrow-down-to-line"></i>
+            </a>
+
+            <a href="#download-win-portable" class="os-download-btn">
+              <div class="os-dl-left">
+                <span class="os-dl-title">Portable Archive (.zip)</span>
+                <span class="os-dl-meta">No installation required • Extract & run</span>
+              </div>
+              <i data-lucide="arrow-down-to-line"></i>
+            </a>
+          </div>
+
+          <div class="os-cli-box">
+            <code>winget install SathiPlus.SathiPlus</code>
+            <button class="copy-btn" data-copy="winget install SathiPlus.SathiPlus" title="Copy to clipboard">
+              <i data-lucide="copy" style="width: 15px; height: 15px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Requirements Table -->
+      <div id="specs-section">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span class="section-tag">Specifications</span>
+          <h3 style="font-size: 1.6rem; font-weight: 700;">System Requirements</h3>
+        </div>
+
+        <div class="specs-table-wrap">
+          <table class="specs-table">
+            <thead>
+              <tr>
+                <th>Requirement</th>
+                <th>macOS</th>
+                <th>Windows</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Operating System</strong></td>
+                <td>macOS 11.0 (Big Sur), Monterey, Ventura, Sonoma, Sequoia</td>
+                <td>Windows 10 / Windows 11 (64-bit architecture)</td>
+              </tr>
+              <tr>
+                <td><strong>Processor</strong></td>
+                <td>Apple Silicon M1/M2/M3/M4 or Intel Core i5/i7/i9</td>
+                <td>Intel Core i3 / AMD Ryzen 3 or higher (x64)</td>
+              </tr>
+              <tr>
+                <td><strong>Memory (RAM)</strong></td>
+                <td>4 GB minimum (8 GB recommended for AI models)</td>
+                <td>4 GB minimum (8 GB recommended for AI models)</td>
+              </tr>
+              <tr>
+                <td><strong>Storage Space</strong></td>
+                <td>500 MB free space for app installation</td>
+                <td>500 MB free space for app installation</td>
+              </tr>
+              <tr>
+                <td><strong>Graphics</strong></td>
+                <td>Apple Metal capable GPU (integrated or discrete)</td>
+                <td>DirectX 11 / OpenGL 3.3 compatible GPU</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about Sathi Plus, privacy, features, and system compatibility.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item open">
+          <button class="faq-trigger" aria-expanded="true">
+            <span>Is Sathi Plus really free to download and use?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Yes! Sathi Plus is completely free. There are no surprise paywalls, no trial limits on PDF processing, and no hidden subscriptions.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>Are my documents, images, and audio private?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Your files remain 100% on your local machine. Unlike browser-based converters that upload confidential PDFs to unfamiliar cloud servers, Sathi Plus processes your files natively on your desktop.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>How does the AI Music and Image generation work?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            The Music Generator lets you describe musical elements, set durations (e.g. 1 minute or more), and toggle vocal stems on or off. The Image Generator supports conversational iteration, allowing you to refine lighting, style, and composition with simple follow-up prompts.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>What keyboard shortcuts are available?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Sathi Plus is built for high-speed navigation. You can press <code style="background: var(--bg-elevated); padding: 2px 6px; border-radius: 4px;">Ctrl + Enter</code> to send generation prompts, <code style="background: var(--bg-elevated); padding: 2px 6px; border-radius: 4px;">Alt + Shift + D</code> for quick actions (such as importing documents or toggling vocal tracks), and use the top search bar to jump to any module instantly.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-trigger" aria-expanded="false">
+            <span>How do I install updates?</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+          <div class="faq-content">
+            Sathi Plus includes a built-in update check in the Settings tab. You will receive an unobtrusive prompt whenever a new release is available, or you can update via Homebrew (<code style="background: var(--bg-elevated); padding: 2px 6px; border-radius: 4px;">brew upgrade sathi-plus</code>) or Windows Package Manager (<code style="background: var(--bg-elevated); padding: 2px 6px; border-radius: 4px;">winget upgrade SathiPlus</code>).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Banner -->
+  <section class="container">
+    <div class="cta-banner">
+      <h2>Transform Your Desktop Experience Today</h2>
+      <p>
+        Join thousands of students, creators, and professionals who use Sathi Plus every day for AI creation, reading, and productivity.
+      </p>
+      <div class="hero-download-buttons">
+        <a href="#download-section" class="btn btn-primary btn-lg">
+          <i data-lucide="download"></i>
+          <span>Download Sathi Plus Free</span>
+        </a>
+        <a href="#mockup-section" class="btn btn-secondary btn-lg">
+          <i data-lucide="eye"></i>
+          <span>Explore Live UI Mockup</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="#" class="nav-brand" style="margin-bottom: 16px;">
+            <div class="brand-icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div class="brand-name">
+              <span>Sathi</span>
+              <span class="plus-tag">Plus</span>
+            </div>
+          </a>
+          <p style="font-size: 0.88rem; line-height: 1.6; max-width: 320px;">
+            Sathi Plus is a unified desktop environment uniting generative AI, offline document tools, and media workflows for macOS and Windows.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Creative AI</h4>
+          <ul class="footer-links">
+            <li><a href="#mockup-section">Music Generator</a></li>
+            <li><a href="#mockup-section">Image Generator</a></li>
+            <li><a href="#tools-suite">Image Analyzer</a></li>
+            <li><a href="#tools-suite">Text to Audio</a></li>
+            <li><a href="#tools-suite">Video Description</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Productivity & PDF</h4>
+          <ul class="footer-links">
+            <li><a href="#pdf-tools">12-in-1 PDF Suite</a></li>
+            <li><a href="#mockup-section">Document Reader</a></li>
+            <li><a href="#tools-suite">Audio Transcription</a></li>
+            <li><a href="#tools-suite">Screen Recorder</a></li>
+            <li><a href="#tools-suite">Ebooks Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Download & Links</h4>
+          <ul class="footer-links">
+            <li><a href="#download-mac">macOS (Apple Silicon & Intel)</a></li>
+            <li><a href="#download-windows">Windows 10 / 11 (64-bit)</a></li>
+            <li><a href="#specs-section">System Requirements</a></li>
+            <li><a href="#faq-section">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Sathi Plus. Engineered with pride for macOS & Windows creators.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <span>Privacy First Architecture</span>
+          <span>•</span>
+          <span>Zero Telemetry</span>
+          <span>•</span>
+          <span>Native Performance</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Lightbox for Full-Resolution Screenshot Inspection -->
+  <div class="modal-backdrop" id="screenshot-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <div class="brand-icon" style="width: 24px; height: 24px; border-radius: 6px;">
+            <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+          </div>
+          <span id="modal-title" style="font-weight: 600; font-size: 0.92rem;">Sathi Plus — UI Screenshot</span>
+        </div>
+        <button class="mockup-action-btn" id="modal-close-btn" aria-label="Close modal">
+          <i data-lucide="x" style="width: 18px; height: 18px;"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-img" src="" alt="Sathi Plus Interface Screenshot" class="modal-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
